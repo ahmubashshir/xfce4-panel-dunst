@@ -1,6 +1,7 @@
 project('xfce4-panel-dunst',
-  ['c','vala'],
-  version: get_option('version'))
+  ['c','vala'])
+
+
 
 add_global_arguments('-DGETTEXT_PACKAGE="xfce4-panel-dunst"',language: 'c')
 

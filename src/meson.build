@@ -4,7 +4,7 @@ cfg_dunst.set('PKGDATADIR', join_paths(get_option('prefix'),get_option('datadir'
 cfg_dunst.set('GETTEXT_PACKAGE', 'xfce4-panel-dunst')
 cfg_dunst.set('RELEASE_NAME', 'xfce4-panel-dunst')
 cfg_dunst.set('PREFIX', get_option('prefix'))
-cfg_dunst.set('VERSION', get_option('version')s)
+cfg_dunst.set('VERSION', get_option('version'))
 cfg_dunst.set('TESTSRCDIR', meson.source_root())
 
 cfgfile_1 = configure_file(
@@ -39,7 +39,7 @@ dunst_library = shared_library('dunst', dunst_sources,
     vala_gir: 'dunst-1.0.gir',
     dependencies: dunst_deps,
     link_args: dunst_link_args,
-    version: '0.0.1',
+    version: get_option('soversion'),
     soversion: '0',
     install: true,
     install_dir: [INSTALL_LIBRARY_dunst, INSTALL_INCLUDE_dunst, INSTALL_VAPI_dunst, INSTALL_GIR_dunst])
@@ -65,7 +65,7 @@ dunst_requires += ['pango']
 dunst_requires += ['x11']
 pkg_mod = import('pkgconfig')
 pkg_mod.generate(libraries : dunst_library,
-	version : '0.0.1',
+	version : get_option('soversion'),
 	name : 'dunst',
 	filebase : 'dunst',
 	description : 'dunst',
