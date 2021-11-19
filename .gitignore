@@ -1,0 +1,9 @@
+!.gitignore
+.bzrignore
+.hgignore
+install
+*~
+CMakeLists.txt
+/cmake
+/pkg
+*.pkg.*

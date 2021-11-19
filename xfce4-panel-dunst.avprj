@@ -1,0 +1,37 @@
+### AutoVala Project ###
+autovala_version: 30
+project_name: xfce4-panel-dunst
+project_version: 0.0.1
+po_comment_tag: TRANSLATOR
+*vala_version: 0.54
+
+custom: data/panel-plugins/dunst.desktop share/xfce4/panel/plugins/
+
+vala_library: src/dunst
+*version: 0.0.1
+*namespace: dunst
+vala_destination: lib/xfce4/panel/plugins
+vala_check_package: libxfce4panel-2.0
+*vala_check_package: atk
+*vala_check_package: cairo-gobject
+*vala_check_package: gdk-3.0
+*vala_check_package: gdk-pixbuf-2.0
+*vala_check_package: gio-2.0
+*vala_check_package: glib-2.0
+*vala_check_package: gobject-2.0
+*vala_check_package: gtk+-3.0
+*vala_check_package: pango
+*vala_check_package: x11
+*vala_source: dbus.vala
+*vala_source: dunst.vala
+*vala_source: plugin.vala
+
+
+*po: po
+
+*translate: vala src/dbus.vala
+*translate: vala src/dunst.vala
+*translate: vala src/plugin.vala
+
+*build_external_program: g-ir-compiler
+

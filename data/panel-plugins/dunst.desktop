@@ -1,0 +1,8 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Dunst Plugin
+Comment=Display Dunst Stats
+Icon=notification-symbolic
+X-XFCE-Module=dunst
+X-XFCE-API=2.0
