@@ -1,5 +1,5 @@
 pkgname=xfce4-panel-dunst
-pkgver=0.0.1.r0.g24dd22a
+pkgver=0.0.1.r2.g6038b00
 pkgrel=1
 pkgdesc="Xfce4 panel plugin for dunst"
 arch=('i686' 'x86_64')

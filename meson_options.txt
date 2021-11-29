@@ -1,2 +1,0 @@
-option('version', type : 'string', value : '0.0.1', description : 'project version')
-option('soversion', type : 'string', value : '0.0.1', description : 'shared lib version')

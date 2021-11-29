@@ -1,3 +1,4 @@
-src/dbus.vala
-src/dunst.vala
-src/plugin.vala
+src/main.vala
+src/plugin/dunst.vala
+src/widget/dbus.vala
+src/widget/widget.vala
